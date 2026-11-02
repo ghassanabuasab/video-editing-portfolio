@@ -202,6 +202,6 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 window.addEventListener('resize', updatePlayhead);
 
-selectCategory(tabs[0]);
+selectCategory(document.getElementById('tab-vertical'));
 updatePlayhead();
 revealTracks();
