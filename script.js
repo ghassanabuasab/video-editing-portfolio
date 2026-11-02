@@ -202,8 +202,8 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 window.addEventListener('resize', updatePlayhead);
 
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  document.getElementById('showreel').pause();
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.getElementById('showreel').play();
 }
 
 selectCategory(document.getElementById('tab-vertical'));
