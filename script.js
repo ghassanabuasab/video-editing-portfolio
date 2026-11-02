@@ -202,6 +202,10 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 window.addEventListener('resize', updatePlayhead);
 
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.getElementById('showreel').pause();
+}
+
 selectCategory(document.getElementById('tab-vertical'));
 updatePlayhead();
 revealTracks();
