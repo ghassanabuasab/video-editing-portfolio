@@ -263,7 +263,8 @@ button {
   background: var(--color-surface);
 }
 
-.video-frame iframe {
+.video-frame iframe,
+.video-frame video {
   position: absolute;
   inset: 0;
   width: 100%;
