@@ -797,6 +797,25 @@ button {
   }
 }
 
+@media (max-width: 360px) {
+  .site-header {
+    gap: 8px;
+  }
+
+  .brand {
+    font-size: 0.875rem;
+    letter-spacing: 0;
+  }
+
+  .site-nav {
+    gap: 10px;
+  }
+
+  .site-nav a {
+    font-size: 0.8125rem;
+  }
+}
+
 /* Touch screens have no hover, so the play button stays visible */
 @media (hover: none) {
   .thumb-play {
