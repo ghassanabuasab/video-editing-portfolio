@@ -593,7 +593,7 @@ button {
   text-transform: uppercase;
 }
 
-/* Each skill is a clip on an edit timeline; clip length shows proficiency */
+/* Each tool is a clip on an edit timeline */
 .tracks {
   display: grid;
   gap: 24px;
@@ -624,7 +624,6 @@ button {
   display: flex;
   align-items: center;
   gap: 12px;
-  width: var(--level);
   min-height: 56px;
   padding: 8px 12px;
   overflow: hidden;
@@ -675,10 +674,7 @@ button {
 }
 
 .track-note {
-  display: flex;
   grid-column: 2;
-  justify-content: space-between;
-  gap: 16px;
   margin-top: 6px;
   color: var(--color-muted);
   font-size: 0.875rem;
