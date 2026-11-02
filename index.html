@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ghassan Abuasab | Video Editor</title>
+  <meta name="description" content="Portfolio of video editor Ghassan Abuasab: commercial, narrative and short-form work.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="Ghassan Abuasab | Video Editor">
+  <meta property="og:description" content="Every frame earns its place. Commercial, narrative and short-form editing.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23000'/%3E%3Cpath d='M12 9l12 7-12 7z' fill='%2389cff0'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Ghassan Abuasab</a>
+    <span class="timecode" id="timecode" aria-hidden="true">00:00:00:00</span>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span class="scroll-progress" id="scroll-progress" aria-hidden="true"></span>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Video editor</p>
+        <h1 class="hero-title" id="hero-title">
+          <span>Ghassan</span>
+          <span>Abuasab</span>
+        </h1>
+        <p class="hero-tagline">Every frame earns its place.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View work</a>
+          <a class="button button-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <figure class="showreel">
+        <div class="video-frame">
+          <!-- Placeholder: replace src with your YouTube or Vimeo embed URL.
+               Vimeo format: https://player.vimeo.com/video/VIDEO_ID -->
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ?start=0&amp;end=60&amp;rel=0"
+            title="Showreel, 60 seconds"
+            allow="encrypted-media; picture-in-picture; fullscreen"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+        <figcaption>
+          <span>Showreel</span>
+          <span>00:01:00:00</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <p class="eyebrow">Seq 01</p>
+        <h2 class="section-title" id="work-title">Selected work</h2>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Filter work by category">
+        <button class="tab" role="tab" type="button" id="tab-commercial" data-category="commercial" aria-selected="true" aria-controls="gallery-panel">Commercial</button>
+        <button class="tab" role="tab" type="button" id="tab-narrative" data-category="narrative" aria-selected="false" aria-controls="gallery-panel" tabindex="-1">Narrative</button>
+        <button class="tab" role="tab" type="button" id="tab-vertical" data-category="vertical" aria-selected="false" aria-controls="gallery-panel" tabindex="-1">Vertical/Short-Form</button>
+      </div>
+
+      <div id="gallery-panel" role="tabpanel" aria-labelledby="tab-commercial">
+        <ul class="gallery-grid" id="gallery-grid"></ul>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="about-bio">
+        <p class="eyebrow">Seq 02</p>
+        <h2 class="section-title" id="about-title">About</h2>
+        <!-- Placeholder bio: replace with your own story, clients and credits. -->
+        <p class="about-lead">I find the rhythm in the footage, then cut until nothing is left that the story doesn't need.</p>
+        <p>I'm Ghassan Abuasab, a video editor working across commercials, narrative films and vertical short-form content. Each format has its own timing, but the job stays the same: hold attention and make people feel something.</p>
+      </div>
+
+      <div class="about-stack">
+        <h3 class="stack-title">Tech stack</h3>
+        <!-- Placeholder levels: set --level and the label to match your real skills. -->
+        <ul class="tracks" id="tracks">
+          <li class="track">
+            <span class="track-id" aria-hidden="true">V1</span>
+            <div class="track-lane">
+              <div class="clip" style="--level: 95%">
+                <span class="clip-mark" aria-hidden="true">Pr</span>
+                <span class="clip-name">Premiere Pro</span>
+              </div>
+            </div>
+            <p class="track-note"><span>Editorial</span><span>Expert</span></p>
+          </li>
+          <li class="track">
+            <span class="track-id" aria-hidden="true">V2</span>
+            <div class="track-lane">
+              <div class="clip" style="--level: 80%">
+                <span class="clip-mark" aria-hidden="true">Ae</span>
+                <span class="clip-name">After Effects</span>
+              </div>
+            </div>
+            <p class="track-note"><span>Motion and compositing</span><span>Advanced</span></p>
+          </li>
+          <li class="track">
+            <span class="track-id" aria-hidden="true">V3</span>
+            <div class="track-lane">
+              <div class="clip" style="--level: 85%">
+                <span class="clip-mark" aria-hidden="true">Dv</span>
+                <span class="clip-name">DaVinci Resolve</span>
+              </div>
+            </div>
+            <p class="track-note"><span>Color grading</span><span>Advanced</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">End card</p>
+      <h2 class="contact-title" id="contact-title">Got footage? Let's cut.</h2>
+      <!-- Placeholder: replace with your public contact email. -->
+      <a class="contact-link" href="mailto:hello@example.com">hello@example.com</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; Ghassan Abuasab</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <dialog class="player" id="player" aria-labelledby="player-title">
+    <div class="player-bar">
+      <h2 class="player-title" id="player-title"></h2>
+      <button class="player-close" id="player-close" type="button">Close</button>
+    </div>
+    <div class="video-frame" id="player-frame"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
