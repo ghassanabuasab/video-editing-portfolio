@@ -4,7 +4,7 @@ const PLACEHOLDER_VIDEO = 'https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ?re
 // Your portfolio. To add real work, edit these entries:
 //   video:     YouTube embed (https://www.youtube.com/embed/VIDEO_ID)
 //              or Vimeo embed (https://player.vimeo.com/video/VIDEO_ID)
-//   thumbnail: path to a still, such as 'images/spot-01.jpg' (replaces `art`)
+//   thumbnail: path or URL of a still, such as 'images/spot-01.jpg' (replaces `art`)
 //   art:       placeholder artwork, 1 to 6
 const PROJECTS = {
   commercial: [
@@ -24,12 +24,34 @@ const PROJECTS = {
     { title: 'Scene Cut 01', format: 'Scene study', duration: '2:10', art: 3 },
   ],
   vertical: [
-    { title: 'Reel 01', format: 'Instagram', duration: '0:30', art: 4 },
-    { title: 'Short 01', format: 'YouTube', duration: '0:45', art: 1 },
-    { title: 'TikTok 01', format: 'TikTok', duration: '0:20', art: 6 },
-    { title: 'Reel 02', format: 'Instagram', duration: '0:15', art: 3 },
-    { title: 'Short 02', format: 'YouTube', duration: '0:58', art: 5 },
-    { title: 'TikTok 02', format: 'TikTok', duration: '0:25', art: 2 },
+    {
+      title: 'Video 3',
+      format: 'YouTube Short',
+      duration: '0:37',
+      video: 'https://www.youtube-nocookie.com/embed/ya8OjAhfYRU?rel=0',
+      thumbnail: 'https://i.ytimg.com/vi/ya8OjAhfYRU/oar2.jpg',
+    },
+    {
+      title: 'Reel 8',
+      format: 'YouTube Short',
+      duration: '0:14',
+      video: 'https://www.youtube-nocookie.com/embed/FN65_Uy7Yec?rel=0',
+      thumbnail: 'https://i.ytimg.com/vi/FN65_Uy7Yec/oar2.jpg',
+    },
+    {
+      title: 'Reel 4',
+      format: 'YouTube Short',
+      duration: '0:20',
+      video: 'https://www.youtube-nocookie.com/embed/PruQpjVu2ac?rel=0',
+      thumbnail: 'https://i.ytimg.com/vi/PruQpjVu2ac/oar2.jpg',
+    },
+    {
+      title: 'Reel 6',
+      format: 'YouTube Short',
+      duration: '0:37',
+      video: 'https://www.youtube-nocookie.com/embed/KJC5RUXO8DM?rel=0',
+      thumbnail: 'https://i.ytimg.com/vi/KJC5RUXO8DM/oar2.jpg',
+    },
   ],
 };
 
