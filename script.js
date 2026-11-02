@@ -25,28 +25,28 @@ const PROJECTS = {
   ],
   vertical: [
     {
-      title: 'Video 3',
+      title: '1',
       format: 'YouTube Short',
       duration: '0:37',
       video: 'https://www.youtube-nocookie.com/embed/ya8OjAhfYRU?rel=0',
       thumbnail: 'https://i.ytimg.com/vi/ya8OjAhfYRU/oar2.jpg',
     },
     {
-      title: 'Reel 8',
+      title: '2',
       format: 'YouTube Short',
       duration: '0:14',
       video: 'https://www.youtube-nocookie.com/embed/FN65_Uy7Yec?rel=0',
       thumbnail: 'https://i.ytimg.com/vi/FN65_Uy7Yec/oar2.jpg',
     },
     {
-      title: 'Reel 4',
+      title: '3',
       format: 'YouTube Short',
       duration: '0:20',
       video: 'https://www.youtube-nocookie.com/embed/PruQpjVu2ac?rel=0',
       thumbnail: 'https://i.ytimg.com/vi/PruQpjVu2ac/oar2.jpg',
     },
     {
-      title: 'Reel 6',
+      title: '4',
       format: 'YouTube Short',
       duration: '0:37',
       video: 'https://www.youtube-nocookie.com/embed/KJC5RUXO8DM?rel=0',
