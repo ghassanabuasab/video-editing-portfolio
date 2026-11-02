@@ -6,23 +6,8 @@ const PLACEHOLDER_VIDEO = 'https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ?re
 //              or Vimeo embed (https://player.vimeo.com/video/VIDEO_ID)
 //   thumbnail: path or URL of a still, such as 'images/spot-01.jpg' (replaces `art`)
 //   art:       placeholder artwork, 1 to 6
+// A new category also needs a matching tab button in index.html.
 const PROJECTS = {
-  commercial: [
-    { title: 'Brand Spot 01', format: 'Brand film', duration: '0:30', art: 1 },
-    { title: 'Product Launch 01', format: 'Launch film', duration: '1:00', art: 3 },
-    { title: 'Campaign Cutdown 01', format: 'Social cutdown', duration: '0:15', art: 5 },
-    { title: 'Brand Spot 02', format: 'TV spot', duration: '0:30', art: 2 },
-    { title: 'Product Launch 02', format: 'Product demo', duration: '0:45', art: 6 },
-    { title: 'Campaign Cutdown 02', format: 'Pre-roll', duration: '0:06', art: 4 },
-  ],
-  narrative: [
-    { title: 'Short Film 01', format: 'Drama', duration: '12:00', art: 5 },
-    { title: 'Short Film 02', format: 'Thriller', duration: '8:30', art: 2 },
-    { title: 'Music Video 01', format: 'Performance', duration: '3:40', art: 6 },
-    { title: 'Short Film 03', format: 'Comedy', duration: '6:15', art: 4 },
-    { title: 'Documentary 01', format: 'Mini doc', duration: '10:20', art: 1 },
-    { title: 'Scene Cut 01', format: 'Scene study', duration: '2:10', art: 3 },
-  ],
   vertical: [
     {
       title: '1',
