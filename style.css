@@ -9,6 +9,9 @@
   --color-accent-bright: #b9e4f9;
   --color-accent-soft: rgba(137, 207, 240, 0.14);
   --color-on-accent: #00131d;
+  --color-purple: #c8b6ff;
+  --color-purple-soft: rgba(200, 182, 255, 0.16);
+  --gradient-accent: linear-gradient(100deg, var(--color-accent), var(--color-purple));
 
   --font-display: "Archivo", "Arial Narrow", Arial, sans-serif;
   --font-mono: "JetBrains Mono", Consolas, monospace;
@@ -73,7 +76,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent-bright);
+  color: var(--color-purple);
 }
 
 button {
@@ -102,7 +105,7 @@ button {
 }
 
 .eyebrow {
-  color: var(--color-accent);
+  color: var(--color-purple);
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   letter-spacing: 0.08em;
@@ -159,7 +162,7 @@ button {
   position: absolute;
   inset: auto 0 -1px;
   height: 2px;
-  background: var(--color-accent);
+  background: var(--gradient-accent);
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -175,7 +178,8 @@ button {
   min-height: 100svh;
   padding: calc(var(--header-height) + 24px) var(--gutter) 32px;
   background:
-    radial-gradient(60% 70% at 78% 45%, rgba(137, 207, 240, 0.16), transparent 70%),
+    radial-gradient(45% 60% at 92% 20%, rgba(200, 182, 255, 0.18), transparent 70%),
+    radial-gradient(60% 70% at 70% 60%, rgba(137, 207, 240, 0.15), transparent 70%),
     var(--color-bg);
 }
 
@@ -210,8 +214,11 @@ button {
 }
 
 .hero-tagline {
+  width: fit-content;
   margin-top: 20px;
-  color: var(--color-accent);
+  background: var(--gradient-accent);
+  background-clip: text;
+  color: transparent;
   font-size: clamp(1.25rem, 2.2vw, 1.875rem);
   font-weight: 500;
   line-height: 1.25;
@@ -236,25 +243,28 @@ button {
 
 .button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(137, 207, 240, 0.28);
+  box-shadow: 0 8px 28px rgba(200, 182, 255, 0.3);
 }
 
 .button-primary {
-  background: var(--color-accent);
+  border-color: transparent;
+  background: var(--gradient-accent) border-box;
   color: var(--color-on-accent);
 }
 
 .button-primary:hover {
-  background: var(--color-accent-bright);
+  filter: brightness(1.1);
   color: var(--color-on-accent);
 }
 
 .button-ghost {
-  color: var(--color-accent);
+  border-color: var(--color-purple);
+  color: var(--color-purple);
 }
 
 .button-ghost:hover {
-  background: var(--color-accent-soft);
+  background: var(--color-purple-soft);
+  color: var(--color-purple);
 }
 
 .video-frame {
@@ -274,7 +284,9 @@ button {
 
 .showreel .video-frame {
   border: 1px solid var(--color-line);
-  box-shadow: 0 0 80px rgba(137, 207, 240, 0.14);
+  box-shadow:
+    -24px 24px 80px rgba(137, 207, 240, 0.14),
+    24px -24px 80px rgba(200, 182, 255, 0.16);
 }
 
 .showreel figcaption {
@@ -331,13 +343,13 @@ button {
 }
 
 .tab:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: var(--color-purple);
+  color: var(--color-purple);
 }
 
 .tab[aria-selected="true"] {
-  border-color: var(--color-accent);
-  background: var(--color-accent);
+  border-color: transparent;
+  background: var(--gradient-accent) border-box;
   color: var(--color-on-accent);
 }
 
@@ -409,7 +421,7 @@ button {
   inset: auto 0 0;
   z-index: 2;
   height: 3px;
-  background: var(--color-accent);
+  background: var(--gradient-accent);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 1.1s linear;
@@ -422,8 +434,8 @@ button {
   inset: 0 auto 0 0;
   z-index: 2;
   width: 2px;
-  background: var(--color-accent);
-  box-shadow: 0 0 12px var(--color-accent);
+  background: var(--color-purple);
+  box-shadow: 0 0 12px var(--color-purple);
   opacity: 0;
   transition: left 1.1s linear, opacity 0.2s ease;
 }
@@ -436,7 +448,7 @@ button {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--color-accent);
+  background: var(--gradient-accent);
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.7);
   transition: opacity 0.25s ease, transform 0.35s var(--ease);
@@ -479,13 +491,13 @@ button {
 
 .card:hover .thumb,
 .card:focus-visible .thumb {
-  outline-color: var(--color-accent);
-  box-shadow: 0 10px 40px rgba(137, 207, 240, 0.2);
+  outline-color: var(--color-purple);
+  box-shadow: 0 10px 40px rgba(200, 182, 255, 0.24);
 }
 
 .card:hover .card-title,
 .card:focus-visible .card-title {
-  color: var(--color-accent);
+  color: var(--color-purple);
 }
 
 .card:hover .thumb-art,
@@ -527,7 +539,7 @@ button {
 
 .art-3 {
   background:
-    repeating-linear-gradient(100deg, rgba(137, 207, 240, 0.32) 0 7%, transparent 7% 14%),
+    repeating-linear-gradient(100deg, rgba(200, 182, 255, 0.3) 0 7%, transparent 7% 14%),
     linear-gradient(120deg, #17384b, #010203 75%);
 }
 
@@ -539,14 +551,14 @@ button {
 
 .art-5 {
   background:
-    conic-gradient(from 200deg at 50% 0%, transparent 0 12%, rgba(185, 228, 249, 0.62) 18%, transparent 26% 100%),
-    linear-gradient(#0a1c28, #000);
+    conic-gradient(from 200deg at 50% 0%, transparent 0 12%, rgba(200, 182, 255, 0.62) 18%, transparent 26% 100%),
+    linear-gradient(#161029, #000);
 }
 
 .art-6 {
   background:
     linear-gradient(115deg, transparent 45%, rgba(137, 207, 240, 0.6) 50%, transparent 56%),
-    linear-gradient(115deg, transparent 62%, rgba(137, 207, 240, 0.25) 66%, transparent 72%),
+    linear-gradient(115deg, transparent 62%, rgba(200, 182, 255, 0.4) 66%, transparent 72%),
     linear-gradient(30deg, #020608, #14303f);
 }
 
@@ -573,7 +585,7 @@ button {
 
 .stack-title {
   margin-bottom: 24px;
-  color: var(--color-accent);
+  color: var(--color-purple);
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   font-weight: 400;
@@ -616,15 +628,15 @@ button {
   min-height: 56px;
   padding: 8px 12px;
   overflow: hidden;
-  background: linear-gradient(90deg, var(--color-accent-soft), rgba(137, 207, 240, 0.32));
-  border: 1px solid var(--color-accent);
+  background: linear-gradient(90deg, rgba(137, 207, 240, 0.28), rgba(200, 182, 255, 0.46));
+  border: 1px solid var(--color-purple);
   border-radius: 2px;
   transition: background-color 0.25s ease, box-shadow 0.25s ease, clip-path 1s var(--ease);
 }
 
 .track:hover .clip {
   background-color: var(--color-accent-soft);
-  box-shadow: 0 0 24px rgba(137, 207, 240, 0.3);
+  box-shadow: 0 0 24px rgba(200, 182, 255, 0.3);
 }
 
 .tracks.will-reveal .clip {
@@ -650,7 +662,7 @@ button {
   width: 36px;
   height: 36px;
   border-radius: 2px;
-  background: var(--color-accent);
+  background: var(--gradient-accent);
   color: var(--color-on-accent);
   font-family: var(--font-mono);
   font-size: 0.875rem;
@@ -761,7 +773,9 @@ button {
 }
 
 .player-close:hover {
-  background: var(--color-accent-soft);
+  border-color: var(--color-purple);
+  background: var(--color-purple-soft);
+  color: var(--color-purple);
 }
 
 /* Responsive */
